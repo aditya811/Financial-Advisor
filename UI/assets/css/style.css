@@ -55,3 +55,21 @@
 
     background-color: rgb(0, 132, 142);
 }
+
+
+.about {
+
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.contact {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+}
