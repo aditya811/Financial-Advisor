@@ -90,37 +90,85 @@
             <div class="card-header">
                 <h4 class="card-title">When would you like to retire?</h4>
             </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a1" value="option1" checked=""> 1-4 years
-                </label>
-            </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a2" value="option1" checked=""> 5-9 years
-                </label>
+
+            <div class="radial-questions">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a1" value="none" checked=""> 1-4 years
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a2" value="none" checked=""> 5-9 years
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a3" value="none" checked=""> 10-19 years
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a4" value="none" checked=""> 20-29 years
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a5" value="none" checked=""> 30+ years
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" Autocheck = "false" class="form-check-input" name="optionsRadios" id="q2-a6" value="none" checked=""> Already retired
+                    </label>
+                </div>
+
+
             </div>
 
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a3" value="option1" checked=""> 10-19 years
-                </label>
-            </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a4" value="option1" checked=""> 20-29 years
-                </label>
-            </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a4" value="option1" checked=""> 30+ years
-                </label>
-            </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a4" value="option1" checked=""> Already retired
-                </label>
-            </div>
+
+            <div id="q3" class="card text-white bg-info mb-3" style="display: none; max-width: 80vw;margin-top:5vh; margin-left:10vw; margin-right:10vw;">
+                    <div class="card-header">
+                        <h4 class="card-title">How do you currently manage your money?</h4>
+                    </div>
+        
+                    <div class="radial-questions">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a1" value="none" checked=""> I mange my own investments
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a2" value="none" checked=""> I use retirement plans (such as a 401(k), Roth IRA, IRA)
+                            </label>
+                        </div>
+        
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a3" value="none" checked=""> I use a robo-advisor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a4" value="none" checked=""> I work with a financial advisor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a5" value="none" checked=""> None of the above
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio"  class="form-check-input" name="optionsRadios" id="q3-a6" value="none" checked=""> Already retired
+                            </label>
+                        </div>
+        
+        
+                    </div>
+        
             <button type="submit" id="next2" class="btn btn-primary" style=" width: 50vw; margin-left: 15vw; margin-right: 15vw;">
                 Next
             </button>
