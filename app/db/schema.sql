@@ -1,3 +1,4 @@
+DROP database financial_advisor_db;
 create database financial_advisor_db;
 use financial_advisor_db;
 
