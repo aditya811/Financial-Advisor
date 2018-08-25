@@ -63,9 +63,9 @@
     margin-bottom: 3vh;
     margin-left: 3vw;
     margin-right: 3vw;
-    text-align: justify;
+   /* text-align: justify;
     text-justify: inter-word;
-
+    */
 }
 
 .contact {
@@ -91,7 +91,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: rgb(120, 194, 173);
     overflow: hidden;
 }
 
@@ -108,7 +108,9 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    /*background-color: #ddd;*/
+    background-color: rgb(255, 230, 0);
+
     color: black;
 }
 

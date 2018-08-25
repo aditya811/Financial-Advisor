@@ -6,10 +6,6 @@
         Adviser Profile Setup
     </title>
 
-
-
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -28,11 +24,33 @@
 
 </head>
 
-
-
-
-
 <body>
+
+    <!--********************************Experimental Navbar*******************************-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active navbar-brand">
+            <h5 style="color:aliceblue;">Midas</h3>
+        </a>
+        <a href="about.html">About</a>
+        <a href="client-survey-questions.html">Find Financial Advisors</a>
+        <a href="profile-fill-out.html">Find Clients</a>
+        <a href="resources.html">Financial Resources</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!--***************************************************************-->
+
+
+
+
+
+
+<!--
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html">Midas</a>
@@ -55,8 +73,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-
             </ul>
+
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button id="search-button" class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -64,19 +82,14 @@
         </div>
     </nav>
 
-
-
-
-
-
-
+-->
     <div class="about">
         <form>
             <fieldset>
                 <legend>Please fill out the appropriate information</legend>
                 <div class="form-group">
                     <br>
-                    <input type="text" class="form-control" placeholder="Your Full Name" id="inputDefault">
+                    <input type="text" class="form-control" placeholder="Your Full Name" id="fullName">
                 </div>
 
                 <div class="form-group">
@@ -87,135 +100,109 @@
                 </div>
                 <div class="form-group">
                     <br>
-                    <input type="text" class="form-control" placeholder="Street Address" id="inputDefault">
+                    <input type="text" class="form-control" placeholder="Street Address" id="streetAddress">
                 </div>
                 <div class="form-group">
                     <br>
-                    <input type="text" class="form-control" placeholder="City" id="inputDefault">
+                    <input type="text" class="form-control" placeholder="City" id="city">
                 </div>
                 <div class="form-group">
                     <br>
-                    <input type="text" class="form-control" placeholder="State" id="inputDefault">
+                    <input type="text" class="form-control" placeholder="State" id="state">
                 </div>
                 <div class="form-group">
-                        <br>
-                        <input type="text" class="form-control" placeholder="Zip" id="inputDefault">
-                    </div>
-
-                <div class="form-group">
-                    <label for="exampleTextarea">Tell us a bit about yourself</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Zip" id="zip">
                 </div>
 
+                <div class="form-group">
+                    <label for="exampleTextarea"></label>
+                    <textarea placeholder="Tell us a bit about yourself" class="form-control" id="aboutYourself" rows="3"></textarea>
+                </div>
 
+                <div class="form-group">
+                    <label for="exampleTextarea"></label>
+                    <textarea placeholder="License Number" class="form-control" id="licenseNumber" rows="1"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleTextarea"></label>
+                    <textarea placeholder="Years of Experience" class="form-control" id="yearsExperience" rows="1"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleTextarea"></label>
+                    <textarea placeholder="Education (School Name)" class="form-control" id="education" rows="1"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleTextarea"></label>
+                    <textarea placeholder="Firm Name (Optional)" class="form-control" id="firmName" rows="1"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleTextarea"></label>
+                    <textarea placeholder="LinkedIn Profile" class="form-control" id="linkedinProfile" rows="1"></textarea>
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <label for="exampleInputFile">Please Upload A Profile Picture</label>
+                    <input type="file" class="form-control-file" id="profilePic" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted">
+                    </small>
+                </div>
+                <br>
                 <fieldset class="form-group">
-                    <legend>What Types of Clients do You Focus On?</legend>
+                    <legend>What Types of Specialties do You Focus On?</legend>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="" unchecked=""> Has Portfolio under 25K
+                            <input class="form-check-input" type="checkbox" value="" unchecked="" id="shortTerm"> Short Term Investments
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="" unchecked=""> Has Portfolio between 25K and 75K
+                            <input class="form-check-input" type="checkbox" value="" unchecked="" id="longTerm"> Long Term Investments
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" unchecked="" id="portfolioBelow"> Portfolios Below 100K
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="" unchecked=""> Has Portfolion over 75K
+                            <input class="form-check-input" type="checkbox" value="" unchecked="" id="portfolioBetween"> Portfolios Between 100K and 500K
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" unchecked="" id="portfolioAbove"> Portfolios Above 500K
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" unchecked="" id="investmentStrat"> Investment Strategies
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" unchecked="" id="estatePlanning"> Estate Planning
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" unchecked="" id="realEstate"> Real Estate
                         </label>
                     </div>
                 </fieldset>
 
-                <div class="form-group">
-                    <label for="exampleSelect1">Example select</label>
-                    <select class="form-control" id="exampleSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleSelect2">Example multiple select</label>
-                    <select multiple="" class="form-control" id="exampleSelect2">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleTextarea">Example textarea</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps
-                        to a new line.</small>
-                </div>
-                <fieldset class="form-group">
-                    <legend>Radio buttons</legend>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Option one is this and that—be sure to include why it's great
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2"> Option two can be something else and selecting it will deselect option one
-                        </label>
-                    </div>
-                    <div class="form-check disabled">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled=""> Option three is disabled
-                        </label>
-                    </div>
-                </fieldset>
-                <fieldset class="form-group">
-                    <legend>Checkboxes</legend>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="" checked=""> Option one is this and that—be sure to include why it's great
-                        </label>
-                    </div>
-                    <div class="form-check disabled">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="" disabled=""> Option two is disabled
-                        </label>
-                    </div>
-                </fieldset>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" id="surveySubmit">Submit</button>
             </fieldset>
         </form>
     </div>
-    <!--
-    <div class="jumbotron">
-        <h1 class="display-3">Welcome to Midas!</h1>
-        <hr class="my-4">
-        <p>We are the world's predominent network for connecting proven financial advisers with serious clients</p>
-        <p>To begin, choose an option below</p>
-        <p class="lead">
-            <div id="choice">
-                <a id="choice1" class="btn btn-primary btn-lg" href="#" role="button">For Advisers</a>
-                <a id="choice2" class="btn btn-primary btn-lg" href="#" role="button">For Clients</a>
-            </div>
-
-        </p>
-    </div>
-
-
--->
-
-
-
-
-
-
-
 
     <!-- Footer -->
     <footer id="foot3" class="page-footer font-small cyan darken-3">
@@ -282,7 +269,9 @@
 
     </footer>
     <!-- Footer -->
+    <script src="assets/javascript/logic.js">
 
+    </script>
 </body>
 
 

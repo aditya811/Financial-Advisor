@@ -35,6 +35,29 @@
 
 <body>
 
+    <!--********************************Experimental Navbar*******************************-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active navbar-brand">
+            <h5 style="color:aliceblue;">Midas</h3>
+        </a>
+        <a href="about.html">About</a>
+        <a href="client-survey-questions.html">Find Financial Advisors</a>
+        <a href="profile-fill-out.html">Find Clients</a>
+        <a href="resources.html">Financial Resources</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!--***************************************************************-->
+
+
+<!--
+
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html">Midas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
@@ -66,6 +89,7 @@
     </nav>
 
 
+-->
 
 
     <h2 class="about">
@@ -79,7 +103,7 @@
                 <h4 class="card-title">1. Please enter your zip code</h4>
             </div>
             <div class="card-body">
-                <input type="text" class="form-control" placeholder="Ex: 10001" id="inputDefault">
+                <input type="text" class="form-control" name="answers-1" placeholder="Ex: 10001" id="client_zip">
             </div>
             <button type="submit" id="next1" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
                 Next
@@ -100,37 +124,37 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a1" value="none" checked=""> 1-4 years
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a1" value="none"> 1-4 years
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a2" value="none" checked=""> 5-9 years
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a2" value="none"> 5-9 years
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a3" value="none" checked=""> 10-19 years
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a3" value="none"> 10-19 years
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a4" value="none" checked=""> 20-29 years
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a4" value="none"> 20-29 years
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q2-a5" value="none" checked=""> 30+ years
+                        <input type="radio" class="form-check-input" name="answers-2" id="q2-a5" value="none"> 30+ years
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" Autocheck="false" class="form-check-input" name="optionsRadios" id="q2-a6" value="none" checked=""> Already retired
+                        <input type="radio" Autocheck="false" class="form-check-input" name="answers-2" id="q2-a6" value="none"> Already retired
                     </label>
                 </div>
 
@@ -153,37 +177,37 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a1" value="none" checked=""> I mange my own investments
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a1" value="none"> I mange my own investments
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a2" value="none" checked=""> I use retirement plans (such as a 401(k), Roth IRA, IRA)
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a2" value="none"> I use retirement plans (such as a 401(k), Roth IRA, IRA)
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a3" value="none" checked=""> I use a robo-advisor
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a3" value="none"> I use a robo-advisor
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a4" value="none" checked=""> I work with a financial advisor
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a4" value="none"> I work with a financial advisor
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a5" value="none" checked=""> None of the above
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a5" value="none"> None of the above
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q3-a6" value="none" checked=""> Already retired
+                        <input type="radio" class="form-check-input" name="answers-3" id="q3-a6" value="none"> Already retired
                     </label>
                 </div>
 
@@ -209,13 +233,13 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q4-a1" value="none" checked=""> Yes
+                        <input type="radio" class="form-check-input" name="answers-4" id="q4-a1" value="none"> Yes
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q4-a2" value="none" checked=""> Not Necessary
+                        <input type="radio" class="form-check-input" name="answers-4" id="q4-a2" value="none"> Not Necessary
                     </label>
                 </div>
 
@@ -240,19 +264,19 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q5-a1" value="none" checked=""> Yes
+                        <input type="radio" class="form-check-input" name="answers-5" id="q5-a1" value="none"> Yes
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q5-a2" value="none" checked=""> Nice to have
+                        <input type="radio" class="form-check-input" name="answers-5" id="q5-a2" value="none"> Nice to have
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q5-a3" value="none" checked=""> Not important
+                        <input type="radio" class="form-check-input" name="answers-5" id="q5-a3" value="none"> Not important
                     </label>
                 </div>
 
@@ -276,19 +300,19 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q6-a1" value="none" checked=""> Very comfortable
+                        <input type="radio" class="form-check-input" name="answers-6" id="q6-a1" value="none"> Very comfortable
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q6-a2" value="none" checked=""> Somewhat comfortable
+                        <input type="radio" class="form-check-input" name="answers-6" id="q6-a2" value="none"> Somewhat comfortable
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q6-a3" value="none" checked=""> Not comfortable at all
+                        <input type="radio" class="form-check-input" name="answers-6" id="q6-a3" value="none"> Not comfortable at all
                     </label>
                 </div>
 
@@ -312,19 +336,19 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q7-a1" value="none" checked=""> Retiring soon
+                        <input type="radio" class="form-check-input" name="answers-7" id="q7-a1" value="none"> Retiring soon
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q7-a2" value="none" checked=""> Investment advice
+                        <input type="radio" class="form-check-input" name="answers-7" id="q7-a2" value="none"> Investment advice
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q7-a3" value="none" checked=""> Other
+                        <input type="radio" class="form-check-input" name="answers-7" id="q7-a3" value="none"> Other
                     </label>
                 </div>
 
@@ -347,13 +371,13 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q8-a1" value="none" checked=""> Yes
+                        <input type="radio" class="form-check-input" name="answers-8" id="q8-a1" value="none"> Yes
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q8-a2" value="none" checked=""> No
+                        <input type="radio" class="form-check-input" name="answers-8" id="q8-a2" value="none"> No
                     </label>
                 </div>
 
@@ -375,13 +399,13 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q9-a1" value="none" checked=""> Yes
+                        <input type="radio" class="form-check-input" name="answers-9" id="q9-a1" value="none"> Yes
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q9-a2" value="none" checked=""> No
+                        <input type="radio" class="form-check-input" name="answers-9" id="q9-a2" value="none"> No
                     </label>
                 </div>
 
@@ -404,25 +428,25 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q10-a1" value="none" checked=""> No
+                        <input type="radio" class="form-check-input" name="answers-10" id="q10-a1" value="none"> No
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q10-a2" value="none" checked=""> Yes, 1
+                        <input type="radio" class="form-check-input" name="answers-10" id="q10-a2" value="none"> Yes, 1
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q10-a3" value="none" checked=""> Yes, 2
+                        <input type="radio" class="form-check-input" name="answers-10" id="q10-a3" value="none"> Yes, 2
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q10-a4" value="none" checked=""> Yes, 3 or more
+                        <input type="radio" class="form-check-input" name="answers-10" id="q10-a4" value="none"> Yes, 3 or more
                     </label>
                 </div>
 
@@ -444,13 +468,13 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q11-a1" value="none" checked=""> No
+                        <input type="radio" class="form-check-input" name="answers-11" id="q11-a1" value="none"> No
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q11-a2" value="none" checked=""> Yes
+                        <input type="radio" class="form-check-input" name="answers-11" id="q11-a2" value="none"> Yes
                     </label>
                 </div>
 
@@ -474,19 +498,19 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q12-a1" value="none" checked=""> Invest More
+                        <input type="radio" class="form-check-input" name="answers-12" id="q12-a1" value="none"> Invest More
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q12-a2" value="none" checked=""> Do nothing
+                        <input type="radio" class="form-check-input" name="answers-12" id="q12-a2" value="none"> Do nothing
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q12-a3" value="none" checked=""> Sell to cut losses
+                        <input type="radio" class="form-check-input" name="answers-12" id="q12-a3" value="none"> Sell to cut losses
                     </label>
                 </div>
 
@@ -509,19 +533,19 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q13-a1" value="none" checked=""> Must have
+                        <input type="radio" class="form-check-input" name="answers-13" id="q13-a1" value="none"> Must have
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q13-a2" value="none" checked=""> Nice to have
+                        <input type="radio" class="form-check-input" name="answers-13" id="q13-a2" value="none"> Nice to have
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q13-a3" value="none" checked=""> Not important
+                        <input type="radio" class="form-check-input" name="answers-13" id="q13-a3" value="none"> Not important
                     </label>
                 </div>
 
@@ -544,19 +568,19 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q14-a1" value="none" checked=""> Must have
+                        <input type="radio" class="form-check-input" name="answers-14" id="q14-a1" value="none"> Must have
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q14-a2" value="none" checked=""> Nice to have
+                        <input type="radio" class="form-check-input" name="answers-14" id="q14-a2" value="none"> Nice to have
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q14-a3" value="none" checked=""> Not important
+                        <input type="radio" class="form-check-input" name="answers-14" id="q14-a3" value="none"> Not important
                     </label>
                 </div>
 
@@ -579,13 +603,13 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q15-a1" value="none" checked=""> Yes
+                        <input type="radio" class="form-check-input" name="answers-15" id="q15-a1" value="none"> Yes
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q15-a2" value="none" checked=""> No
+                        <input type="radio" class="form-check-input" name="answers-15" id="q15-a2" value="none"> No
                     </label>
                 </div>
 
@@ -608,13 +632,13 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q16-a1" value="none" checked=""> Yes
+                        <input type="radio" class="form-check-input" name="answers-16" id="q16-a1" value="none"> Yes
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q16-a2" value="none" checked=""> No, I am comfortable working by phone or video-conference
+                        <input type="radio" class="form-check-input" name="answers-16" id="q16-a2" value="none"> No, I am comfortable working by phone or video-conference
                     </label>
                 </div>
 
@@ -637,37 +661,37 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q17-a1" value="none" checked=""> Less than $40,000
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a1" value="none"> Less than $40,000
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q17-a2" value="none" checked=""> $40,000-$74,999
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a2" value="none"> $40,000-$74,999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q17-a3" value="none" checked=""> $75,000-$99,999
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a3" value="none"> $75,000-$99,999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q17-a4" value="none" checked=""> $100,000-$149,999
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a4" value="none"> $100,000-$149,999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q17-a5" value="none" checked=""> $150,000-$249,999
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a5" value="none"> $150,000-$249,999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q17-a6" value="none" checked=""> Over $250,000
+                        <input type="radio" class="form-check-input" name="answers-17" id="q17-a6" value="none"> Over $250,000
                     </label>
                 </div>
 
@@ -689,37 +713,37 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q18-a1" value="none" checked=""> Less than $25,000
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a1" value="none"> Less than $25,000
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q18-a2" value="none" checked=""> $25,000-$99,999
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a2" value="none"> $25,000-$99,999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q18-a3" value="none" checked=""> $100,000-$249,999
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a3" value="none"> $100,000-$249,999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q18-a4" value="none" checked=""> $250,000-$999,999
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a4" value="none"> $250,000-$999,999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q18-a5" value="none" checked=""> $1,000,000-$4,999,999
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a5" value="none"> $1,000,000-$4,999,999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q18-a6" value="none" checked=""> Over $5,000,000
+                        <input type="radio" class="form-check-input" name="answers-18" id="q18-a6" value="none"> Over $5,000,000
                     </label>
                 </div>
 
@@ -741,37 +765,37 @@
             <div class="radial-questions">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q19-a1" value="none" checked=""> Less than $100
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a1" value="none"> Less than $100
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q19-a2" value="none" checked=""> $100-$249
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a2" value="none"> $100-$249
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q19-a3" value="none" checked=""> $250-$499
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a3" value="none"> $250-$499
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q19-a4" value="none" checked=""> $500-$999
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a4" value="none"> $500-$999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q19-a5" value="none" checked=""> $1,000-$1,999
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a5" value="none"> $1,000-$1,999
                     </label>
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="q19-a6" value="none" checked=""> Over $2,000
+                        <input type="radio" class="form-check-input" name="answers-19" id="q19-a6" value="none"> Over $2,000
                     </label>
                 </div>
 
@@ -790,7 +814,7 @@
                 <h4 class="card-title">20. Is there anything else you would like your matches to know?</h4>
             </div>
             <div class="card-body">
-                <input type="text" class="form-control" placeholder="" id="inputDefault">
+                <input type="text" class="form-control" placeholder="" name="answers-20"id="inputDefault">
             </div>
             <button type="submit" id="next20" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
                 Next
@@ -804,7 +828,7 @@
                 <h4 class="card-title">21. Who should we reach out to?</h4>
             </div>
             <div class="card-body">
-                <input type="text" class="form-control" placeholder="" id="inputDefault">
+                <input type="text" class="form-control" placeholder="" name="answers-21" id="client_name">
             </div>
             <button type="submit" id="next21" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
                 Next
@@ -819,7 +843,7 @@
                 <h4 class="card-title">22. What is your email address?</h4>
             </div>
             <div class="card-body">
-                <input type="text" class="form-control" placeholder="" id="inputDefault">
+                <input type="text" class="form-control" name="answers-22" placeholder="" id="client_email">
             </div>
             <button type="submit" id="next22" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
                 Next
@@ -833,10 +857,10 @@
                 <h4 class="card-title">23. What is your phone number?</h4>
             </div>
             <div class="card-body">
-                <input type="text" class="form-control" placeholder="" id="inputDefault">
+                <input type="text" class="form-control" name="answers-23" placeholder="" id="client_phone">
             </div>
             <button type="submit" id="next23" class="btn btn-primary" style="width: 50vw; margin-left: 15vw; margin-right: 15vw;">
-                Next
+                Submit
             </button>
         </div>
         <!--************************************************************************************************************* -->
