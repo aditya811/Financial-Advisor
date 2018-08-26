@@ -126,6 +126,15 @@
 }
 
 
+.form-check{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 321px){
+
+
+}
+
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
